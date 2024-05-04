@@ -63,7 +63,7 @@ z-index: 100;
 
 .navbar a:hover,
 .navbar a.active{
-    color: var(--text-color);
+    color: var(--main-color);
 }
 
 #menu-icon{
@@ -141,5 +141,122 @@ span{
     display: inline-block;
     padding: 1rem 2.8rem;
     background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
     
+}
+
+.btn:hover{
+    box-shadow: none;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background:var(--snd-bf-color);
+
+}
+
+.about-img img{
+    width: 35vw;
+}
+
+.heading{
+    text-align: center;
+    font-size:4.5rem;
+}
+
+.About-content h2{
+    text-align: left;
+    line-height: 1.2;
+}
+.About-content h3{
+    font-size: 2.6rem;
+}
+
+.About-content p{
+    font-size: 1.6rem;
+    margin: 2rem 0  3rem;
+
+}
+
+.Portfolio{
+    background:var(--snd-bf-color);
+}
+
+.Portfolio h2{
+    margin-bottom: 4rem;
+}
+
+.Portfolio-container{
+    display: grid;
+
+}
+
+.Portfolio-container.Portfolio-box{
+    position: relative;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+
+}
+
+.Portfolio-box img{
+    width: 10%;
+    transition: 5s ease;
+    opacity: 0.7;
+}
+.Portfolio-box:hover img{
+    transform: scale(1.1);
+}
+
+.Portfolio-box .Portfolio-layer{
+    position: absolute;
+    border:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(rgba 0.0.0.0.1) var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.Portfolio-box:hover .portfolio-layer{
+    transform: translateY(0);
+}
+
+.Portfolio-layer h4{
+   font-size: 3rem;
+}
+
+.Portfolio-layer p{
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+}
+.Portfolio-layer{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background:var(--text-color);
+    border-radius: 50%;
+}
+
+.portfolio-layer a i{
+    font-style: 2rem;
+    color:var(--snd-bf-color);
+
 }
