@@ -49,7 +49,7 @@ ScrollReveal({
 });
      
 ScrollReveal().reveal(".Home-content", 'heading', { origin: 'top' });
-ScrollReveal().reveal('.home-image', '.Portfoliobox', '.contact form', { origin: 'button' });
+ScrollReveal().reveal('.home-image', '.portfolio-box', '.contact form', { origin: 'button' });
 ScrollReveal().reveal('.Home-contact  h1', '.about-img', { origin: 'left'});
 ScrollReveal().reveal('.Home-contact p', '.About-content', { origin: 'right' });
 
